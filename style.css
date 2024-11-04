@@ -1,0 +1,434 @@
+/* Importing google fonts **************************************** */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Coiny&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap");
+
+/* CSS Reset ***************************************************** */
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+/* Setting Variables ********************************************* */
+:root {
+  /* Colors */
+
+  --Purple-100: hsl(254, 88%, 90%);
+  --Purple-500: hsl(256, 67%, 59%);
+  --Yellow-100: hsl(31, 66%, 93%);
+  --Yellow-500: hsl(39, 100%, 71%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 7%);
+  /* Font weight */
+  --fw-400: 400;
+  --fw-500: 500;
+
+  /* Font Family */
+  --ff-paragraph: "DM Sans", sans-serif;
+
+  /* Typography */
+  --fs-normal: 1.125rem;
+  --fs-medium: 1.3rem;
+  --fs-large: 1.6rem;
+}
+
+/* Styling the body *********************************************** */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 20px;
+  font-size: var(--fs-normal);
+  background-color: var(--White);
+  font-family: var(--ff-paragraph);
+  color: var(--Black);
+  font-weight: var(--fw-500);
+}
+
+/* Styling the body ************************************************************** */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  margin: 3rem auto 0;
+  line-height: 1;
+  border-radius: 15px;
+}
+
+/* Styling the Grid Cells ************************************************************** */
+.container--cell--1,
+.container--cell--2,
+.container--cell--3,
+.container--cell--4,
+.container--cell--5,
+.container--cell--6,
+.container--cell--7,
+.container--cell--8 {
+  background-color: var(--White);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgb(25, 33, 46, 0.1);
+}
+
+/* Styling Grid Cell 1 ************************************************************** */
+.container--cell--1 {
+  background-color: var(--Purple-500);
+  text-align: center;
+}
+
+.container--cell--1 h2 {
+  color: var(--White);
+  font-size: 3.5rem;
+  font-weight: var(--fw-400);
+}
+
+.container--cell--1 span {
+  font-size: 3.5rem;
+  color: var(--Yellow-500);
+  font-weight: var(--fw-400);
+}
+
+.container--cell--1 p {
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-400);
+  color: var(--White);
+  margin-bottom: 1rem;
+}
+
+.container--cell--1 img {
+  width: 100%;
+  max-width: 180px;
+  display: block;
+  margin: 1rem auto 0.5rem;
+}
+
+/* Styling Grid Cell 2 ************************************************************** */
+.container--cell--2 {
+  background-color: var(--White);
+}
+
+.container--cell--2 h2 {
+  font-size: var(--fs-medium);
+}
+
+.container--cell--2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+/* Styling Grid Cell 3 ************************************************************** */
+.container--cell--3 {
+  background-color: var(--Yellow-500);
+  padding-bottom: 0;
+}
+
+.container--cell--3 h2 {
+  font-size: var(--fs-medium);
+}
+
+.container--cell--3 img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin-top: 1rem;
+}
+
+/* Styling Grid Cell 4 ************************************************************** */
+.container--cell--4 {
+  background-color: var(--Purple-100);
+  text-align: center;
+}
+
+.container--cell--4 h2 {
+  font-size: var(--fs-medium);
+}
+
+.container--cell--4 p {
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-400);
+}
+
+.container--cell--4 img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 1rem auto 1.5rem;
+}
+
+/* Styling Grid Cell 5 ************************************************************** */
+.container--cell--5 {
+  background-color: var(--Purple-500);
+}
+
+.container--cell--5 h2 {
+  font-size: var(--fs-large);
+  text-align: center;
+  color: var(--White);
+  font-weight: var(--fw-400);
+}
+
+.container--cell--5 img {
+  width: 100%;
+  max-width: 220px;
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+/* Styling Grid Cell 6 ************************************************************** */
+.container--cell--6 {
+  background-color: var(--White);
+}
+
+.container--cell--6 p {
+  font-size: var(--fs-normal);
+  margin-top: 0.6rem;
+}
+
+.container--cell--6 span {
+  font-size: 3rem;
+}
+
+.container--cell--6 img {
+  width: 100%;
+  max-width: 180px;
+  display: block;
+  margin-top: 1.3rem;
+}
+
+/* Styling Grid Cell 7 ************************************************************** */
+.container--cell--7 {
+  background-color: var(--Yellow-100);
+}
+
+.container--cell--7 img {
+  width: 100%;
+  max-width: 160px;
+  display: block;
+  margin-top: 1.5rem;
+}
+
+.container--cell--7 h2 {
+  font-size: var(--fs-large);
+}
+
+.container--cell--7 span {
+  color: var(--Purple-500);
+}
+
+/* Styling Grid Cell 8 ************************************************************** */
+.container--cell--8 {
+  background-color: var(--Yellow-500);
+}
+
+.container--cell--8 h2 {
+  font-size: var(--fs-large);
+}
+
+.container--cell--8 img {
+  width: 100%;
+  max-width: 220px;
+  display: block;
+  margin-top: 1.5rem;
+}
+
+/* Styling the footer (optional) ******************************************************* */
+
+.attribution {
+  font-size: var(--fs-medium);
+  color: var(--Purple-500);
+  font-weight: var(--fw-600);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--Purple-600);
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+  color: var(--Yellow-500);
+}
+
+/* Media Queries ******************************************************* */
+
+@media (min-width: 40em) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .container--cell--1 {
+    grid-column: 1/3;
+  }
+  .container--cell--4 {
+    grid-column: 1/3;
+  }
+  .container--cell--5 {
+    grid-column: 2/3;
+    grid-row: 5;
+  }
+}
+
+@media (min-width: 75em) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "creme purple1 purple1 lila"
+      "creme purple1 purple1 lila"
+      "creme purple1 purple1 lila"
+      "creme purple1 purple1 lila"
+      "creme white1 yellows lila"
+      "yellowL white1 yellows lila"
+      "yellowL white1 yellows lila"
+      "yellowL white2 purpleL purpleL"
+      "yellowL white2 purpleL purpleL";
+
+    width: 68rem;
+  }
+
+  /* Grid Cell 1 ******************************** */
+  .container--cell--1 {
+    grid-area: purple1;
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
+
+  .container--cell--1 h2 {
+    font-size: 3.5rem;
+  }
+  .container--cell--1 span {
+    font-size: 3.5rem;
+    font-weight: var(--fw-500);
+  }
+  .container--cell--1 p {
+    font-size: 1.2rem;
+  }
+  .container--cell--1 img {
+    max-width: 180px;
+  }
+
+  /* Grid Cell 2 ******************************** */
+  .container--cell--2 {
+    grid-area: white1;
+    overflow: hidden;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .container--cell--2 img {
+    width: 280px;
+  }
+
+  .container--cell--2 h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Grid Cell 3 ******************************** */
+  .container--cell--3 {
+    grid-area: yellows;
+    padding-bottom: 0;
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+  }
+
+  .container--cell--3 h2 {
+    font-size: 1.6rem;
+  }
+
+  /* Grid Cell 4 ******************************** */
+  .container--cell--4 {
+    grid-area: lila;
+    width: 16rem;
+    overflow: hidden;
+    text-align: left;
+  }
+  .container--cell--4 img {
+    width: 380px;
+  }
+
+  .container--cell--4 h2 {
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+  }
+
+  /* Grid Cell 5 ******************************** */
+  .container--cell--5 {
+    grid-area: purpleL;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .container--cell--5 img {
+    margin: 0;
+    max-width: 210px;
+  }
+  .container--cell--5 h2 {
+    font-size: 2rem;
+  }
+
+  /* Grid Cell 6 ******************************** */
+  .container--cell--6 {
+    grid-area: white2;
+    padding-bottom: 0;
+  }
+
+  .container--cell--6 span {
+    font-size: 3.5rem;
+  }
+
+  .container--cell--6 img {
+    max-width: 160px;
+  }
+
+  .container--cell--6 p {
+    font-size: 1.1rem;
+  }
+
+  /* Grid Cell 7 ******************************** */
+  .container--cell--7 {
+    grid-area: creme;
+  }
+
+  .container--cell--7 h2 {
+    font-size: 2.2rem;
+    margin: 3rem 0 1rem;
+  }
+
+  .container--cell--7 img {
+    max-width: 200px;
+    margin-bottom: 3rem;
+  }
+
+  /* Grid Cell 8 ******************************** */
+  .container--cell--8 {
+    grid-area: yellowL;
+    padding-bottom: 0;
+    padding-right: 0.8rem;
+  }
+
+  .container--cell--8 h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .container--cell--8 img {
+    margin: 0;
+    width: 370px;
+  }
+}
